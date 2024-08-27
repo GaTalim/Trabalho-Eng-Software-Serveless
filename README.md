@@ -62,9 +62,9 @@ Clique em Create e, em seguida, em Test.
 4.2 Verificar o Resultado
 Se tudo estiver configurado corretamente, você verá a seguinte saída no console:
 
-
 {
     "statusCode": 200,
     "body": "Hello, SeuNome!"
 }
+
 Este é o resultado esperado, onde SeuNome é o nome passado no evento de teste.
