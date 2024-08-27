@@ -52,7 +52,6 @@ Escolha Create new test event, nomeie o evento (por exemplo, test-event), e cole
 Substitua "SeuNome" pelo nome que você deseja usar no teste.
 
 Clique em Create e, em seguida, em Test.
-4.2 Verificar o Resultado
 Se tudo estiver configurado corretamente, você verá a seguinte saída no console:
 
 {
