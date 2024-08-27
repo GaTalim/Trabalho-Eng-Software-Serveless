@@ -14,8 +14,14 @@ Escolha o tipo de entidade confiável: AWS service.
 Selecione Lambda como o serviço que usará este role.
 Clique em Next: Permissions e selecione as permissões necessárias, como AWSLambdaBasicExecutionRole (essa política permite que sua função Lambda escreva logs no Amazon CloudWatch).
 Clique em Next: Tags (opcional) e, depois, em Next: Review.
+1.3 Pode Criar um Bucket S3 para usarmos no exemplo:
+   ![image](https://github.com/user-attachments/assets/48740af6-6c64-4f57-aa79-0bfef3b38d0b)
 Nomeie o role (por exemplo, lambda-basic-role) e clique em Create role.
-2. Escrever o Código da Função
+1.4 Escrever o Código da Função
+   ![image](https://github.com/user-attachments/assets/ce8b2600-de75-47ec-9fa3-124d7b3c0de7)
+   ![image](https://github.com/user-attachments/assets/e85d2a17-3896-4958-8c08-91b358561c88)
+
+
 Vamos usar Node.js para este exemplo. Siga os passos abaixo:
 
 2.1 Criar o Arquivo de Código
