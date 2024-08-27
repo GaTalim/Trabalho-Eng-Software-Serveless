@@ -1,6 +1,7 @@
 # Trabalho-Eng-Software-Serveless
 Gabriel Torres Talim - 20213010324
 
+# Criação da Função Lambda AWS
 Ensina a criar um projeto Serveless de função Lambda AWS
 
 1. Criar uma Conta na AWS e Configurar um IAM Role
@@ -71,7 +72,7 @@ Se tudo estiver configurado corretamente, você verá a seguinte saída no conso
 Este é o resultado esperado, onde SeuNome é o nome passado no evento de teste.
 
 
-A arquitetura serverless oferece várias vantagens que a tornam uma escolha atraente para muitos desenvolvedores e empresas. Aqui estão alguns dos principais benefícios:
+# Beneficios da Arquitetura Serveless
 
 1. Escalabilidade Automática
 Escalabilidade sob demanda: Em uma arquitetura serverless, as funções são escaladas automaticamente conforme a demanda. Se sua aplicação tiver picos de tráfego, o provedor de nuvem ajustará automaticamente o número de instâncias necessárias para lidar com o aumento de carga, sem a necessidade de intervenção manual.'
