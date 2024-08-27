@@ -114,7 +114,7 @@ Escolha a opção Author from scratch.
 
 #### 3.3 Adicionar o Código
 
-Na seção Function code, você verá um editor onde pode colar o código JavaScript que você criou no index.js.
+Na seção Function code, você verá um editor onde pode colar o código Python que você criou no function.py.
 
 Substitua qualquer código de exemplo com o código fornecido acima.
 
