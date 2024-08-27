@@ -22,11 +22,10 @@ Nomeie o role (por exemplo, lambda-basic-role) e clique em Create role.
    ![image](https://github.com/user-attachments/assets/e85d2a17-3896-4958-8c08-91b358561c88)
 
 
-Vamos usar Node.js para este exemplo. Siga os passos abaixo:
+Vamos usar Python para este exemplo. Siga os passos abaixo:
 
 2.1 Criar o Arquivo de Código
-No seu ambiente de desenvolvimento local, crie um arquivo chamado index.js com o código que esta no arquivo.
-Este código define uma função Lambda simples que recebe um evento contendo um nome e retorna uma saudação personalizada.
+Este código Python é uma função Lambda projetada para ser acionada por eventos do Amazon S3. A função redimensiona uma imagem que foi carregada em um bucket S3 para 128x128 pixels e, em seguida, faz o upload da imagem redimensionada em um novo bucket ou diretório no S3.
 
 3. Criar a Função no Console da AWS
 3.1 Acessar o Console da AWS
@@ -35,37 +34,37 @@ No menu de serviços, procure por Lambda e clique para acessar.
 3.2 Criar a Função Lambda
 Clique em Create function.
 Escolha a opção Author from scratch.
-Preencha os seguintes detalhes:
-Function name: Por exemplo, hello-world.
-Runtime: Selecione a versão mais recente do Node.js (por exemplo, Node.js 18.x).
-Permissions: Em Change default execution role, selecione Use an existing role e escolha o role lambda-basic-role criado anteriormente.
+
 3.3 Adicionar o Código
 Na seção Function code, você verá um editor onde pode colar o código JavaScript que você criou no index.js.
 Substitua qualquer código de exemplo com o código fornecido acima.
 Clique em Deploy para salvar as alterações.
+3.4 Adicione o gatilho para o ser o Evento
+![image](https://github.com/user-attachments/assets/9d4f356a-bd84-4a2e-a94c-4c43d158ed36)
+![image](https://github.com/user-attachments/assets/e60b1995-6a81-438a-809b-c6c29bbcb846)
+
+
 
 
 4. Testar a Função Lambda
+   ![image](https://github.com/user-attachments/assets/1076beca-c98e-49f7-a9b3-52fd2434db70)
+
 4.1 Configurar e Executar o Teste
 Clique em Test no console da função Lambda.
 Em Test event, selecione Configure test event.
-Escolha Create new test event, nomeie o evento (por exemplo, test-event), e cole o seguinte JSON:
+Escolha Create new test event, nomeie o evento (por exemplo, test-event):
+![image](https://github.com/user-attachments/assets/dbf42ead-1022-4895-814d-7218cbd5639a)
 
-{
-    "name": "SeuNome"
-}
+e coloque o seguinte codigo Json na pasta.
 
-Substitua "SeuNome" pelo nome que você deseja usar no teste.
+
+![image](https://github.com/user-attachments/assets/3b449d9e-7fdd-4297-aef8-39cd463d2d57)
+
+![image](https://github.com/user-attachments/assets/79435d0d-d206-424e-923b-04de3d061774)
+
 
 Clique em Create e, em seguida, em Test.
-Se tudo estiver configurado corretamente, você verá a seguinte saída no console:
-
-{
-    "statusCode": 200,
-    "body": "Hello, SeuNome!"
-}
-
-Este é o resultado esperado, onde SeuNome é o nome passado no evento de teste.
+Este é o resultado esperado, onde a imagem sera alterada para 128x128 pixels.
 
 
 # Beneficios da Arquitetura Serveless
