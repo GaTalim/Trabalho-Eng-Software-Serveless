@@ -19,18 +19,7 @@ Nomeie o role (por exemplo, lambda-basic-role) e clique em Create role.
 Vamos usar Node.js para este exemplo. Siga os passos abaixo:
 
 2.1 Criar o Arquivo de Código
-No seu ambiente de desenvolvimento local, crie um arquivo chamado index.js com o seguinte código:
-
-exports.handler = 
-async (event) => {
-    const name = event.name;
-    const response = {
-        statusCode: 200,
-        body: `Hello, ${name}!`
-    };
-    return response;
-};
-
+No seu ambiente de desenvolvimento local, crie um arquivo chamado index.js com o código que esta no arquivo.
 Este código define uma função Lambda simples que recebe um evento contendo um nome e retorna uma saudação personalizada.
 
 3. Criar a Função no Console da AWS
@@ -55,9 +44,11 @@ Clique em Deploy para salvar as alterações.
 Clique em Test no console da função Lambda.
 Em Test event, selecione Configure test event.
 Escolha Create new test event, nomeie o evento (por exemplo, test-event), e cole o seguinte JSON:
+
 {
     "name": "SeuNome"
 }
+
 Substitua "SeuNome" pelo nome que você deseja usar no teste.
 
 Clique em Create e, em seguida, em Test.
