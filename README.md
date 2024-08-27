@@ -20,7 +20,8 @@ Vamos usar Node.js para este exemplo. Siga os passos abaixo:
 2.1 Criar o Arquivo de Código
 No seu ambiente de desenvolvimento local, crie um arquivo chamado index.js com o seguinte código:
 
-exports.handler = async (event) => {
+exports.handler = 
+async (event) => {
     const name = event.name;
     const response = {
         statusCode: 200,
